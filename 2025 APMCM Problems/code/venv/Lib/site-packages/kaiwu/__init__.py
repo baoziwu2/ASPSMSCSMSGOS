@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+模块: kaiwu
+
+功能: 提供一系列CIM量子计算开发工具
+"""
+__version__ = "1.3.0"
+
+import logging
+from kaiwu import qubo, cim, ising, classical, sampler, solver, license, hobo  # pylint: disable=<W0622>
+from kaiwu import common, core, conversion, preprocess
+
+
+logging.getLogger(__name__).addHandler(logging.NullHandler())
+__all__ = ["qubo", "cim", "ising", "classical", "sampler",
+           "common", "license", "core", "conversion", "preprocess", "solver", "hobo"]
